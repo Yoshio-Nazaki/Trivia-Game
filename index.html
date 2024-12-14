@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title> Trivia Game </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="Minecraft Soundtrack Rain & Thunder to relax & study to [ ezmp3.cc ].mp3" type="audio/mp3">
+    </audio>
+    
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">Trivia Game</a>
+
+            <nav class="navbar">
+                <a href="#" class="active" id="homeLink">Home</a>
+                <a href="#" id="infoLink">Info</a>
+            </nav>
+        </header>
+
+        <div class="container">
+           <section class="quiz-section">
+            <div class="quiz-box">
+                <h1>• Cloudy Minds Quiz •</h1>
+                <div class="quiz-header">
+                    <span> Quiz </span>
+                    <span class="header-score">Score: 0 / 5</span>
+                </div>
+                <h2 class="question-text">What is the fastest land animal?</h2>
+
+                <div class="option-list">
+                <!-- <div class="option">
+                        <span>A. Lion</span>
+                    </div>
+                    <div class="option">
+                        <span>B. Cheetah</span>
+                    </div>
+                    <div class="option">
+                        <span>C. Horse</span>
+                    </div>
+                    <div class="option">
+                        <span>D. Dog</span>
+                    </div > -->
+                </div>
+
+                <div class="quiz-footer">
+                    <span class="question-total">1 of 30 Questions</span>
+                    <button class="next-btn"> Next </button>
+                </div>
+            </div>
+
+            <img id="feedbackImage" src="" alt="Feedback" class="feedback-image" style="display: none;">
+
+            <div class="result-box">
+                <h2> Result: </h2>
+                <div class="percentage-box">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <span class="score-text">Final Score 0 out of 30</span>
+                    <span class="message-result"></span>
+                </div>
+
+                <div class="buttons">
+                    <button class="tryAgain-btn"> Retry </button>
+                    <button class="backHome-btn"> Home </button>
+                </div>
+            </div>
+           </section>
+
+        <section class="home">
+            <div class="home-content">
+                <h1> Cloudy Minds </h1>
+                <p>Welcome to Cloudy Minds a trivia game where your mind is to explore small but very interesting facts. 
+                    Indulge yourself in the small things and see the world as a big sandbox for your growing imagination!</p>
+                <button class="shrink-btn"> Start </button>
+            </div>
+        </section>
+
+        <div id="groupInfo" class="group-info"> 
+            <h2> Group 4 </h2>
+            <div class="group-about">
+                <p><strong>Game Name:</strong> Cloudy Minds</p>
+                <p><strong>Leader:</strong> Ruiz, Elgyin Roei <br><strong>Members:</strong></br> 
+                    <li>Antoniano, Phola Louise</li>
+                    <li>Bonifacio, Justine</li>
+                    <li>Clemente, Adam</li>
+                    <li>Japlit, Angel Stephannie</li>
+                    <li>Obnimaga, Kerth</li>
+                    <li>Ramirez, David Ethan</li></p>
+            </div>
+            <p>Thank you for learning more about our group!</p>
+            <button id="closeInfoBtn" class="close-info-btn">&#8592; Close</button>
+        </div>
+    </div>
+    </main>
+
+    <div class="popup-info">
+        <h2> Guide: </h2>
+        <span class="info">• Choose a correct answer and get points! The higher the points, the greater the score!</span>
+        <span class="info">• The higher the points, the greater the score!</span>
+        <span class="info">• Get a perfect score and raise your mind!</span>
+
+        <div class="btn-group">
+            <button class="shrink1-btn exit-btn"> Exit </button>
+            <a href="#" class="shrink1-btn continue-btn"> Continue </a>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
